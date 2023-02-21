@@ -19,7 +19,7 @@ function CardViewer(props) {
       <div id="card" onClick={() => switchSide()}>{front ? props.cards.slice()[currIndex].front : props.cards.slice()[currIndex].back}</div>
       <button id="previous" disabled={currIndex === 0} type="button" onClick={() => newCard(currIndex - 1)}>Previous</button>
       <button id="next" disabled={currIndex === props.cards.slice().length - 1} type="button" onClick={() => newCard(currIndex + 1)}>Next</button>
-      <button type="button" onClick={() => props.switchMode()}>switch mode</button>
+      {/* <button type="button" onClick={() => props.switchMode()}>switch mode</button> */}
     </div>
   );
 }

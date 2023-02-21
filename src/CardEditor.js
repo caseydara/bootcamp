@@ -46,7 +46,7 @@ function CardEditor(props) {
       <input name="front" placeholder="Front of card" value={front} onChange={(e) => setFront(e.target.value)} />
       <input name="back" placeholder="Back of card" value={back} onChange={(e) => setBack(e.target.value)} />
       <button type="button" onClick={() => addAndClear({ front, back })}>add card</button>
-      <button type="button" onClick={() => props.switchMode()}>switch mode</button>
+      {/* <button type="button" onClick={() => props.switchMode()}>switch mode</button> */}
 
     </div>
   );
