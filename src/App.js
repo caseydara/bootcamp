@@ -41,6 +41,13 @@ function App(props) {
     setCards(newCards);
   };
 
+  // const editCard = (card, index) => {
+  //   const newCards = cards.slice();
+  //   newCards[index] =
+  //   newCards.splice(index, 1);
+  //   setCards(newCards);
+  // };
+
   const switchMode = () => {
     setEditor(!editor);
   };
